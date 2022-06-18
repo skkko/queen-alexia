@@ -18,7 +18,7 @@
 <a href="https://github.com/nep-28"><img title="Author" src="https://img.shields.io/badge/Author-neptune-blue.svg?color=54aeff&style=for-the-badge&logo=github" /></a>  
 
 <br>
-
+[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
 
 ---
 
