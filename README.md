@@ -64,7 +64,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ## ```Connect With Me```
 <p align="center">
 <a href="https://wa.me/94702476028"><img src="https://img.shields.io/badge/Contact Neptune-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ"><img src="https://img.shields.io/badge/Subscribe Nexus-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+<a href="https://chat.whatsapp.com/Gi47BN7YM30321sUIa7mtT"><img src="https://img.shields.io/badge/join whatsapp group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" /> <<br>
 </p>
 
 </details>
