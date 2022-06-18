@@ -58,19 +58,19 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 ----
 
+<!-- Contact Owner -->
+<b><details><summary>Contact</summary></b>
+
+## ```Connect With Me```
+<p align="center">
+<a href="https://wa.me/94702476028"><img src="https://img.shields.io/badge/Contact Neptune-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
+<a href="https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ"><img src="https://img.shields.io/badge/Subscribe Nexus-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
+</p>
+
+</details>
 
 
-
-
-
-
-
-
-
-
-
-
-
+</details><hr>
 
 
   
@@ -92,45 +92,45 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 
 
 
-<b><details><summary>Available Features</summary><br>
+
 	
-| Features |  Availability |
-| :------: |  :----------: |
-|   Convert     |       ✅     |
-|   Database     |       ✅     |
-|   Owner     |       ✅    |
-|   Islami     |       ✅     |
-|   Downloader     |       ✅     |
-|   Webzone     |       ✅[      |
-|   Searching     |       ✅      |
-|   Textpro     |       ✅      |
-|   Ephoto     |       ✅     |
-|   Anime Web     |       ✅      |
-|   Stalker     |       ✅      |
-|   Random Text     |       ✅     |
-|   Random Image     |       ✅     |
-|   Nekos Life     |       ✅      |
-|   More Nsfw     |       ✅      |
-|   Creator     |       ✅      |
-
-</details>
 
 
-----
-
-<!-- Contact Owner -->
-<b><details><summary>Contact</summary></b>
-
-## ```Connect With Me```
-<p align="center">
-<a href="https://wa.me/918129624000"><img src="https://img.shields.io/badge/Contact Nexus-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />
-<a href="https://youtube.com/channel/UCqoUjPvDdb0kjXNYdvPPpHQ"><img src="https://img.shields.io/badge/Subscribe Nexus-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
-</p>
-
-</details>
 
 
-</details><hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Thanks To
 * [`@adiwajshing/baileys`](https://github.com/adiwajshing/baileys)
@@ -139,4 +139,4 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 * [`AflahXrd`](https://github.com/nexusNw)
 
 
-License: [MIT](https://github.com/Gojo-Satoru/LICENSE)
+
