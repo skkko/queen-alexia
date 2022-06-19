@@ -3074,18 +3074,18 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ││✑  🐺🖐️!!
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
-│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│✙ 𝔅𝔬𝔱 𝔑𝔞𝔪𝔢 : ${global.botname}
+│✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔞𝔪𝔢 : ${global.ownername}
+│✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔲𝔪𝔟𝔢𝔯 : ${global.owner}
+│✙ 𝔗𝔬𝔱𝔞𝔩 𝔘𝔰𝔢𝔯 : ${Object.keys(global.db.data.users).length}
+│✙ 𝔖𝔭𝔢𝔢𝔡 : ${latensie.toFixed(4)} miliseconds
+│✙ ℜ𝔲𝔫𝔱𝔦𝔪𝔢 : ${runtime(process.uptime())}
 └┬──────────────┈ ⳹
    │✑ Click The Button Below
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'YouTube📍',
+                                    displayText: 'Group 🔗',
                                     url: `${myweb}`
                                 }
                             }, {
@@ -3095,17 +3095,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu 📋',
+                                    displayText: 'All Menu 🎉',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu 🧾',
+                                    displayText: 'List Menu 🎊',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: '👤Owner👤',
+                                    displayText: 'Owner 👤',
                                     id: `${prefix}owner`
                                 }
                             }]
@@ -3136,7 +3136,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │✙ ℜ𝔲𝔫𝔱𝔦𝔪𝔢 : ${runtime(process.uptime())}
 │✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔞𝔪𝔢 : ${global.ownername}
 │✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔲𝔪𝔟𝔢𝔯 : ${global.owner}
-│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│✙ 𝔖𝔭𝔢𝔢𝔡 : ${latensie.toFixed(4)} miliseconds
 │✙ 𝔓𝔩𝔞𝔱𝔣𝔬𝔯𝔪 : ${os.platform()}
 │✙ 𝔗𝔬𝔱𝔞𝔩 𝔘𝔰𝔢𝔯 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
@@ -3154,17 +3154,17 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'All Menu',
+                                    displayText: 'All Menu 🎉',
                                     id: `${prefix}allmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'List Menu',
+                                    displayText: 'List Menu 🎊',
                                     id: `${prefix}command`
                                 }
                                 }, {
                                 quickReplyButton: {
-                                    displayText: 'Owner',
+                                    displayText: 'Owner 👤',
                                     id: `${prefix}owner`
                                 }
                             }]
