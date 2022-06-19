@@ -3304,8 +3304,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
 │✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
 │✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 │✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
    │✑ Click The Button Below
@@ -3361,7 +3359,6 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │ 「 BOT INFO 」
 │✙ 𝔅𝔬𝔱 𝔑𝔞𝔪𝔢 : ${global.botname}
 │✙ ℜ𝔲𝔫𝔱𝔦𝔪𝔢 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : 
 │✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔞𝔪𝔢 : ${global.ownername}
 │✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔲𝔪𝔟𝔢𝔯 : ${global.owner}
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
