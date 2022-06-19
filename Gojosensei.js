@@ -3363,8 +3363,8 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔞𝔪𝔢 : ${global.ownername}
 │✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔲𝔪𝔟𝔢𝔯 : ${global.owner}
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│✙ 𝔓𝔩𝔞𝔱𝔣𝔬𝔯𝔪 : ${os.platform()}
+│✙ 𝔗𝔬𝔱𝔞𝔩 𝔘𝔰𝔢𝔯 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
    │✑  cₗᵢcₖ ₜₕₑ bᵤₜₜₒₙ bₑₗₒw 
    └───────────────┈ ⳹`,
