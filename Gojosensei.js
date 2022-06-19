@@ -2096,8 +2096,6 @@ break
 ╠✎🧚‍♀️ Viewes : ${anu.views}
 ╠✎🧚‍♀️ Uploaded On : ${anu.ago}
 ╠✎🧚‍♀️ Author : ${anu.author.name}
-╠✎🧚‍♀️ Channel : ${anu.author.url}
-╠✎🧚‍♀️ Description : ${anu.description}
 ╚═✎🧚‍♀️ Url : ${anu.url}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
