@@ -2034,7 +2034,7 @@ break
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
                 let no = 1
                 for (let i of search.all) {
-                    teks += `🧚‍♀️ No : ${no++}\n🧚‍♀️ Type : ${i.type}\n🧚‍♀️ Video ID : ${i.videoId}\n🧚‍♀️ Title : ${i.title}\n🧚‍♀️ Views : ${i.views}\n🧚‍♀️ Duration : ${i.timestamp}\n🧚‍♀️ Uploaded On : ${i.ago}\n🧚‍♀️ Author : ${i.author.name}\n🧚‍♀️ Url : ${i.url}\n\n─────────────────\n\n`
+                    teks += `✎﹏🧚‍♀️ No : ${no++}\n✎﹏🧚‍♀️ Type : ${i.type}\n✎﹏🧚‍♀️ Video ID : ${i.videoId}\n✎﹏🧚‍♀️ Title : ${i.title}\n✎﹏🧚‍♀️ Views : ${i.views}\n✎﹏🧚‍♀️ Duration : ${i.timestamp}\n✎﹏🧚‍♀️ Uploaded On : ${i.ago}\n✎﹏🧚‍♀️ Author : ${i.author.name}\n✎﹏🧚‍♀️ Url : ${i.url}\n\n─────────────────\n\n`
                 }
                 GojoMdNx.sendMessage(m.chat, { image: { url: search.all[0].thumbnail },  caption: teks }, { quoted: m })
             }
@@ -2045,9 +2045,9 @@ break
                 google({'query': text}).then(res => {
                 let teks = `Google Search Title : ${text}\n\n`
                 for (let g of res) {
-                teks += `🧚‍♀️ *Title* : ${g.title}\n`
-                teks += `🧚‍♀️ *Description* : ${g.snippet}\n`
-                teks += `🧚‍♀️ *Link* : ${g.link}\n\n────────────────────────\n\n`
+                teks += `✎﹏🧚‍♀️ *Title* : ${g.title}\n`
+                teks += `✎﹏🧚‍♀️ *Description* : ${g.snippet}\n`
+                teks += `✎﹏🧚‍♀️ *Link* : ${g.link}\n\n────────────────────────\n\n`
                 } 
                 reply(teks)
                 })
@@ -2087,16 +2087,16 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-🧚‍♀️ Title : ${anu.title}
-🧚‍♀️ Ext : Search
-🧚‍♀️ ID : ${anu.videoId}
-🧚‍♀️ Duration : ${anu.timestamp}
-🧚‍♀️ Viewes : ${anu.views}
-🧚‍♀️ Uploaded On : ${anu.ago}
-🧚‍♀️ Author : ${anu.author.name}
-🧚‍♀️ Channel : ${anu.author.url}
-🧚‍♀️ Description : ${anu.description}
-🧚‍♀️ Url : ${anu.url}`,
+✎﹏🧚‍♀️ Title : ${anu.title}
+✎﹏🧚‍♀️ Ext : Search
+✎﹏🧚‍♀️ ID : ${anu.videoId}
+✎﹏🧚‍♀️ Duration : ${anu.timestamp}
+✎﹏🧚‍♀️ Viewes : ${anu.views}
+✎﹏🧚‍♀️ Uploaded On : ${anu.ago}
+✎﹏🧚‍♀️ Author : ${anu.author.name}
+✎﹏🧚‍♀️ Channel : ${anu.author.url}
+✎﹏🧚‍♀️ Description : ${anu.description}
+✎﹏🧚‍♀️ Url : ${anu.url}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2110,7 +2110,7 @@ break
                 let quality = args[1] ? args[1] : '320kbps'
                 let media = await yta(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                GojoMdNx.sendImage(m.chat, media.thumb, `🐦 Title : ${media.title}\n🐦 File Size : ${media.filesizeF}\n🐦 Url : ${isUrl(text)}\n🐦 Ext : MP3\n🐦 Resolution : ${args[1] || '320kbps'}`, m)
+                GojoMdNx.sendImage(m.chat, media.thumb, `✎﹏🧚‍♀️ Title : ${media.title}\n✎﹏🧚‍♀️ File Size : ${media.filesizeF}\n✎﹏🧚‍♀️ Url : ${isUrl(text)}\n✎﹏🧚‍♀️ Ext : MP3\n✎﹏🧚‍♀️ Resolution : ${args[1] || '320kbps'}`, m)
                 GojoMdNx.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
             }
             break
@@ -2120,7 +2120,7 @@ break
                 let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(text, quality)
                 if (media.filesize >= 999999) return reply('File Over Limit '+util.format(media))
-                GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🧚‍♀️ Title : ${media.title}\n🧚‍♀️ File Size : ${media.filesizeF}\n🧚‍♀️ Url : ${isUrl(text)}\n🧚‍♀️ Ext : MP3\n🧚‍♀️ Resolution : ${args[1] || '360p'}` }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `✎﹏🧚‍♀️ Title : ${media.title}\n✎﹏🧚‍♀️ File Size : ${media.filesizeF}\n✎﹏🧚‍♀️ Url : ${isUrl(text)}\n✎﹏🧚‍♀️ Ext : MP3\n🧚‍♀️ Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
 	    case 'getyta': {
@@ -2151,7 +2151,7 @@ break
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: '🐦 Media Url : '+result }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: '✎﹏🧚‍♀️ Media Url : '+result }, { quoted: m })
             }
             break
 case 'webtonsearch': case 'webtoon':
@@ -2251,7 +2251,7 @@ case 'webtonsearch': case 'webtoon':
                     var but = [
 				{
 					"urlButton": {
-						"displayText": "YouTube📍",
+						"displayText": "Group 🔗",
 						"url": `${myweb}`
 						}
 					}
@@ -2299,7 +2299,7 @@ case 'webtonsearch': case 'webtoon':
                 ]
                 let buttonMessage = {
                     image: { url: result.image[0] },
-                    caption: `🧚‍♀️ Title : ${result.title}\n🧚‍♀️ Category : ${result.type}\n🧚‍♀️ Detail : ${result.source}\n🧚‍♀️ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
+                    caption: `✎﹏🧚‍♀️ Title : ${result.title}\n✎﹏🧚‍♀️ Category : ${result.type}\n✎﹏🧚‍♀️ Detail : ${result.source}\n✎﹏🧚‍♀️ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2806,7 +2806,7 @@ case 'webtonsearch': case 'webtoon':
                 if (!text) return reply(`Enter Query Link!`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
-                GojoMdNx.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `🐦 Title : ${anu.result.title}`}, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `🧚‍♀️ Title : ${anu.result.title}`}, { quoted: m })
             }
             break
 	        case 'pindl': case 'pinterestdl': {
@@ -2828,11 +2828,11 @@ case 'webtonsearch': case 'webtoon':
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
 			caption: `
-🧚‍♀️ Title : ${anu.title}
-🧚‍♀️ Author : ${anu.author.name}
-🧚‍♀️ Like : ${anu.like}
-🧚‍♀️ Caption : ${anu.caption}
-🧚‍♀️ Url : ${anu.media[0]}
+✎﹏🧚‍♀️ Title : ${anu.title}
+✎﹏🧚‍♀️ Author : ${anu.author.name}
+✎﹏🧚‍♀️ Like : ${anu.like}
+✎﹏🧚‍♀️ Caption : ${anu.caption}
+✎﹏🧚‍♀️ Url : ${anu.media[0]}
 To Download Media, Please Click One Of The Buttons Below Or Enter The ytmp3/ytmp4 Command With The Url Above
 `,
 			footer: GojoMdNx.user.name,
@@ -3277,12 +3277,12 @@ reply("Success Changing Menu To "+q)
 break
                     case 'botbug': case 'bugreport': {
                     	if(!text) return reply(`Enter The Bug\n\nExample: ${command} Menu Error`)
-                    	GojoMdNx.sendMessage(`918129624395@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	GojoMdNx.sendMessage(`94702476028@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
                     break
-                     case 'alive': case 'bot':{
+                     case 'alive': case 'alexia':{
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
@@ -3291,11 +3291,11 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         hydratedTemplate: {
                             hydratedContentText: anu,
                             locationMessage: {
-                            jpegThumbnail: fs.readFileSync('./GojoMedia/gojo.jpg')},
+                            jpegThumbnail: fs.readFileSync('./GojoMedia/alexia.jpg')},
                             hydratedFooterText: `┌─❖
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Queen alexia alive now 🎉
+┌┤✑  qᴜᴇᴇɴ ᴀʟᴇxɪᴀ ᴀʟɪᴠᴇ ɴᴏᴡ 🎉
 ││✑  🐺🖐️!!
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
@@ -3356,7 +3356,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌─❖
 │「 Hi 👋 」
 └┬❖ 「 ${pushname} 」
-┌┤✑  Queen alexia alive now 🎉
+┌┤✑  qᴜᴇᴇɴ ᴀʟᴇxɪᴀ ᴀʟɪᴠᴇ ɴᴏᴡ 🎉
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -3368,7 +3368,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 │✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 │✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
-   │✑  Click The Button Below
+   │✑  cₗᵢcₖ ₜₕₑ bᵤₜₜₒₙ bₑₗₒw 
    └───────────────┈ ⳹`,
                             hydratedButtons: [{
                                 urlButton: {
@@ -3406,9 +3406,9 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
-                    description: `queen alexia main menu\n\n`,
+                    description:`╭─✪ 🧚‍♀️Qᵘᵉᵉⁿ ᵃˡᵉˣⁱᵃ ᵐᵃⁱⁿ ᵐᵉⁿᵘ🧚‍♀️ ✪──\n\n`,
                     buttonText: "Menu",
-                    footerText: `click the button below 😊`,
+                    footerText: `╰ cₗᵢcₖ ₜₕₑ bᵤₜₜₒₙ bₑₗₒw 👇`,
                     listType: "SINGLE_SELECT",
                     sections: [{
 								"title": "Main Features",
