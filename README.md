@@ -82,7 +82,7 @@ npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@nexusNw/Md-Scanner?outputonly=1&lite=1)
 
 
-
+## Then deploy bot from here
 
 
 
