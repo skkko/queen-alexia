@@ -3359,12 +3359,12 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌┤✑  qᴜᴇᴇɴ ᴀʟᴇxɪᴀ ᴀʟɪᴠᴇ ɴᴏᴡ 🎉
 │└───────────────┈ ⳹
 │ 「 BOT INFO 」
+│✙ 𝔅𝔬𝔱 𝔑𝔞𝔪𝔢 : ${global.botname}
+│✙ ℜ𝔲𝔫𝔱𝔦𝔪𝔢 : ${runtime(process.uptime())}
+│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : 
+│✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔞𝔪𝔢 : ${global.ownername}
+│✙ 𝔒𝔴𝔫𝔢𝔯 𝔑𝔲𝔪𝔟𝔢𝔯 : ${global.owner}
 │✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
 │✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 │✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
@@ -3531,8 +3531,8 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 GojoMdNx.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/388df83495a1c68b2db98.jpg' }, caption: `*Hi Bro ${m.pushName}*\nDonation section is currently down🥲 , I know you are happy but me 🥲💔\n` }, { quoted: m })
             }
             break
-            case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/nep-28/alalexia-botz\n Dont Forget To Give Star\n\nYouTube : ${myweb}\nDont Forget To Watch Tutorial`)
+            case 'gitlink': case 'githublink': {
+                reply(`GitHub : https://github.com/nep-28/queen-alexia\n Dont Forget To Give Star`)
             }
             break
 case 'allmenu': {
