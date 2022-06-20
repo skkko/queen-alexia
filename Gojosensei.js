@@ -2148,6 +2148,10 @@ break
             break
        	case 'gytmp4b': {
 		if (!text) throw `Example : ${prefix + command}lily`
+		let search = await yts(text)
+		let search = await yts(text)
+		let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
+		
 		let butttons = [
 			{buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '360P'}, type: 1},
 			{buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '480P'}, type: 1},
