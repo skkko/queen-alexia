@@ -2149,9 +2149,20 @@ break
        	case 'gytmp4b': {
 		if (!text) throw `Example : ${prefix + command}lily`
 		let butttons = [
-			{buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '360P'}, type: 1},
-			{buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '360P'}, type: 1},
-		
+			{buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '360P'}, type: 1},
+			{buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '480P'}, type: 1},
+			{buttonId: `ytmp4 ${anu.url} 720p`, buttonText: {displayText: '720P'}, type: 1}
+		]
+		let buttonMassege = {
+		    image: {url: anu.thumbnail },
+		    captian: `test v`,
+		    footer: GojoMdNx.user.name,
+		    buttons: buttons,
+		    headertype: 4
+		}
+		GojoMdNx.sendMassege(m.chat, buttonMassege, { quoted: m})
+	}
+	break
             case 'pinterest': case 'pindown': {
                 reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
