@@ -2148,6 +2148,8 @@ break
             break
        	case 'gytmp4b': {
 		if (!text) throw `Example : ${prefix + command} lily`
+		let yts = require("yt-search")
+		let search = await yts(text)
 		let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 		
 		let butttons = [
