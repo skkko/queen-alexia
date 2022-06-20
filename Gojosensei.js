@@ -2146,6 +2146,12 @@ break
                 GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `┏━✪ 🧚‍♀️Qᴜᴇᴇɴ ᴀʟᴇxɪᴀ yᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ🧚‍♀️ ✪━\n🧚‍♀️ Title : ${media.title}\n╠✎🧚‍♀️ File Size : ${media.filesizeF}\n╠✎🧚‍♀️ Url : ${urls[text - 1]}\n╠✎🧚‍♀️ Ext : MP3\n╠✎🧚‍♀️ Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
+       	case 'gytmp4b': {
+		if (!text) throw `Example : ${prefix + command}lily`
+		let butttons = [
+			{buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '360P'}, type: 1},
+			{buttonId: `ytmp4 ${anu.url}`, buttonText: {displayText: '360P'}, type: 1},
+		
             case 'pinterest': case 'pindown': {
                 reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
