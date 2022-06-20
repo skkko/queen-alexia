@@ -2167,7 +2167,25 @@ break
 		GojoMdNx.sendMassege(m.chat, buttonMassege, { quoted: m})
 	}
 	break
-            case 'pinterest': case 'pindown': {
+        case 'gytmp3b': {
+		if (!text) throw `Example : ${prefix + command} lily`
+		let yts = require("yt-search")
+		let search = await yts(text)
+		let butttons = [
+			{buttonId: `ytmp3 ${anu.url} 360p`, buttonText: {displayText: 'LOW QULITY'}, type: 1},
+			{buttonId: `ytmp3 ${anu.url} 360p`, buttonText: {displayText: 'HIGH QULITY'}, type: 1}
+		]
+		let buttonMassege = {
+		    image: {url: anu.thumbnail },
+		    captian: `test v`,
+		    footer: GojoMdNx.user.name,
+		    buttons: buttons,
+		    headertype: 4
+		}
+		GojoMdNx.sendMassege(m.chat, buttonMassege, { quoted: m})
+	}
+        break    
+        case 'pinterest': case 'pindown': {
                 reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
