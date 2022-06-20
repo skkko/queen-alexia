@@ -2147,8 +2147,7 @@ break
             }
             break
        	case 'gytmp4b': {
-		if (!text) throw `Example : ${prefix + command}lily`
-		let urls = quoted.text.match(new RegExp(/(?:https?:\/\/)?(?:youtu\.be\/|(?:www\.|m\.)?youtube\.com\/(?:watch|v|embed|shorts)(?:\.php)?(?:\?.*v=|\/))([a-zA-Z0-9\_-]+)/, 'gi'))
+		if (!text) throw `Example : ${prefix + command} lily`
 		let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
 		
 		let butttons = [
