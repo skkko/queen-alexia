@@ -2145,50 +2145,7 @@ break
                 if (media.filesize >= 100000) return reply('File Over Limit '+util.format(media))
                 GojoMdNx.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `┏━✪ 🧚‍♀️Qᴜᴇᴇɴ ᴀʟᴇxɪᴀ yᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ🧚‍♀️ ✪━\n🧚‍♀️ Title : ${media.title}\n╠✎🧚‍♀️ File Size : ${media.filesizeF}\n╠✎🧚‍♀️ Url : ${urls[text - 1]}\n╠✎🧚‍♀️ Ext : MP3\n╠✎🧚‍♀️ Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
-            break
-       	case 'gytmp4b': {
-		if (!text) throw `Example : ${prefix + command} lily`
-		let yts = require("yt-search")
-		let search = await yts(text)
-		let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
-		
-		let butttons = [
-			{buttonId: `ytmp4 ${anu.url} 360p`, buttonText: {displayText: '360P'}, type: 1},
-			{buttonId: `ytmp4 ${anu.url} 480p`, buttonText: {displayText: '480P'}, type: 1},
-			{buttonId: `ytmp4 ${anu.url} 720p`, buttonText: {displayText: '720P'}, type: 1}
-		]
-		let buttonMassege = {
-		    image: {url: anu.thumbnail },
-		    captian: `':┏━✪ 🧚‍♀️Qᴜᴇᴇɴ ᴀʟᴇxɪᴀ yᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ🧚‍♀️ ✪━
-		    
-		    
-		    
-		    Click the buttons'`,
-		    footer: 'test ver1',
-		    buttons: buttons,
-		    headertype: 4
-		}
-		GojoMdNx.sendMassege(m.chat, buttonMassege, { quoted: m})
-	}
-	break
-        case 'gytmp3b': {
-		if (!text) throw `Example : ${prefix + command} lily`
-		let yts = require("yt-search")
-		let search = await yts(text)
-		let butttons = [
-			{buttonId: `ytmp3 ${anu.url} 360p`, buttonText: {displayText: 'LOW QULITY'}, type: 1},
-			{buttonId: `ytmp3 ${anu.url} 360p`, buttonText: {displayText: 'HIGH QULITY'}, type: 1}
-		]
-		let buttonMassege = {
-		    image: {url: anu.thumbnail },
-		    captian: `test v,
-		    footer: 'GojoMdNx.user.name',
-		    buttons: buttons,
-		    headertype: 4
-		}
-		GojoMdNx.sendMassege(m.chat, buttonMassege, { quoted: m})
-	}
-        break    
+            break    
         case 'pinterest': case 'pindown': {
                 reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
