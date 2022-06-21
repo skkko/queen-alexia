@@ -2160,7 +2160,7 @@ break
 		let buttonMassege = {
 		    image: {url: anu.thumbnail },
 		    captian: `:test v'`,
-		    footer: `GojoMdNx.user.name,`
+		    footer: `test ver1,
 		    buttons: buttons,
 		    headertype: 4
 		}
