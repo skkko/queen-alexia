@@ -2159,13 +2159,13 @@ break
 		]
 		let buttonMassege = {
 		    image: {url: anu.thumbnail },
-		    captian: `:┏━✪ 🧚‍♀️Qᴜᴇᴇɴ ᴀʟᴇxɪᴀ yᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ🧚‍♀️ ✪━
+		    captian: `':┏━✪ 🧚‍♀️Qᴜᴇᴇɴ ᴀʟᴇxɪᴀ yᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ🧚‍♀️ ✪━
 		    
 		    
 		    
 		    Click the buttons'`,
 		    footer: 'test ver1',
-		    buttons: 'buttons',
+		    buttons: buttons,
 		    headertype: 4
 		}
 		GojoMdNx.sendMassege(m.chat, buttonMassege, { quoted: m})
