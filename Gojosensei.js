@@ -2159,8 +2159,8 @@ break
 		]
 		let buttonMassege = {
 		    image: {url: anu.thumbnail },
-		    captian: `test v`,
-		    footer: GojoMdNx.user.name,
+		    captian: `:test v'`,
+		    footer: `GojoMdNx.user.name,`
 		    buttons: buttons,
 		    headertype: 4
 		}
@@ -2177,8 +2177,8 @@ break
 		]
 		let buttonMassege = {
 		    image: {url: anu.thumbnail },
-		    captian: `test v`,
-		    footer: GojoMdNx.user.name,
+		    captian: `test v,
+		    footer: 'GojoMdNx.user.name',
 		    buttons: buttons,
 		    headertype: 4
 		}
